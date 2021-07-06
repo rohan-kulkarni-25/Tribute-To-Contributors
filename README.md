@@ -19,4 +19,4 @@
 </ul>
 
   
-  <h1><a href="https://youtu.be/W0I3W5F1kz8">WATCH HANDS ON DEMO</a></h1>
+  <h1><a href="https://youtu.be/W0I3W5F1kz8" target="_blank">WATCH HANDS ON DEMO</a></h1>
