@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -18,9 +19,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            align-items: center;
             width: max-content;
-
             margin: 2vmin;
             padding: 2em;
             padding-bottom: 0%;
@@ -32,11 +31,17 @@
             border-radius: 12px;
         }
 
+        .contributorbox a {
+            display: flex;
+            justify-content: space-around;
+        }
+
         .logo {
-            width: 2em;
+            width: 2.5em;
             border-radius: 52px;
             cursor: pointer;
-            margin-top: 2vmin;
+            margin: 2vmin;
+
         }
 
         #head {
@@ -61,15 +66,27 @@
             display: flex;
             justify-content: center;
             padding: 1vmin;
+            font-size: 3vmin;
 
         }
 
-        a {
+        .foot a {
             text-decoration: none;
-            color: white;
-            padding-left: 5vmin;
+            color: black;
+            /* padding-left: 5vmin; */
+            margin-left: 3vmin;
+            border-radius: 12px;
+            padding: 0.5vmin;
             text-align: right;
             font-size: 3.2vmin;
+            background-color: white;
+        }
+
+        #head img {
+            /* width: 1vmin; */
+            height: 8vmin;
+            padding: 1vmin;
+            border-radius: 12px;
         }
     </style>
 
@@ -102,7 +119,7 @@
                 document.getElementById('list').appendChild(box);
 
             }
-            document.getElementById('head').innerHTML = `<p>CONTRIBUTORS OF  ${repo} !! All Credit Goes to Them</p>`
+            document.getElementById('head').innerHTML = `<img src="logo.png"><p>CONTRIBUTORS OF  ${repo} !! All Credit Goes to Them</p>`
         }
         getCollaborator();
 
